@@ -4,4 +4,5 @@ The purpose of the repository is to show how to analyze and fix problems.
 * Circular module dependencies - module_a depends on module_b, which depends on module_a
 * Implied dependency - logic in module_b, uses module_c without declaring the dependency
 * Out of range dependency - module_a has constraint on version of module_c that is not satisfied
+* Missing dependency - module_a has dependency on missing module cloudsmith/newrelic
 * Simple syntax error - the file bogus.pp has if statement with missing 'then' part in { }
