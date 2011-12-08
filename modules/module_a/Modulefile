@@ -1,0 +1,9 @@
+name 'cloudsmith-module_a'
+version '0.0.1'
+
+author 'cloudsmith'
+license 'Apache'
+project_page 'https://github.com/cloudsmith/tutorial-stackhammer-fix-problems'
+source 'https://github.com/cloudsmith/tutorial-stackhammer-fix-problems/modules/module_a'
+summary 'Illustrates various problems'
+description ''
