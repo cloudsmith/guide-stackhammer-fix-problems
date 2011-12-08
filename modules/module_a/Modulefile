@@ -6,7 +6,11 @@ license 'Apache'
 project_page 'https://github.com/cloudsmith/tutorial-stackhammer-fix-problems'
 source 'https://github.com/cloudsmith/tutorial-stackhammer-fix-problems/modules/module_a'
 summary 'Illustrates various problems'
-description ''
+description 'This module has various problems.
+There is a circular dependency module_a -> module_b -> module_a
+It has a constraint on the version of module_c that is not satisfied (although module_c exists, it has a higher version than the constraint).
+It contains a file \'bogus.pp\' with a syntax error.
+'
 dependency 'cloudsmith/module_b', '>=0.0.1'
 dependency 'cloudsmith/module_c', '==0.0.1'
 dependency 'cloudsmith/newrelic', '>=0.0.1'
