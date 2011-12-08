@@ -1,0 +1,2 @@
+class module_a {	
+}
