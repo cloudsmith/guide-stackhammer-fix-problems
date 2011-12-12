@@ -9,5 +9,5 @@ $quirky ="Interpolation of $variable-with-hyphen"
 
 # Runtime sometimes allows access between parameters, but order is undefined.
 # Stackhammer helps you catch this problem (do not reference other parameters) 
-define uninitialized($a = $c, $b = $a, $c=10) {
+define uninitialized($a = $notVisibleToA, $notVisibleToA=10) {
 }
