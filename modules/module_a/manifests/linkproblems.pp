@@ -4,6 +4,7 @@
 debugg " running a manifests with link problems " 
 
 class linkproblems {
+	require "a-class-corectly-spelled"
 	$tempfilegroup = "other"
 	file {
 		'/tmp/testfile' :
@@ -14,3 +15,4 @@ class linkproblems {
 			group => $linkproblems::tmpfilegroup
 	}
 }
+class a-class-correctly-spelled {}
